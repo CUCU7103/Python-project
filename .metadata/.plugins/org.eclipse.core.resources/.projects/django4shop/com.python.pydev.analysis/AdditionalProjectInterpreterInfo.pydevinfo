@@ -1,0 +1,63 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\work\psou\.metadata\.plugins\org.eclipse.core.resources\.projects\django4shop\com.python.pydev.analysis\v2_indexcache
+shopapp.migrations.__init__|1681882877755050200|C:\work\psou\django4shop\shopapp\migrations\__init__.py
+shopapp.views|1681887825683608200|C:\work\psou\django4shop\shopapp\views.py
+django4shop.asgi|1681882837902368500|C:\work\psou\django4shop\django4shop\asgi.py
+shopapp.apps|1681882878427784200|C:\work\psou\django4shop\shopapp\apps.py
+django4shop.settings|1681883010361118000|C:\work\psou\django4shop\django4shop\settings.py
+shopapp.__init__|1681882877747744500|C:\work\psou\django4shop\shopapp\__init__.py
+shopapp.admin|1681882877728598800|C:\work\psou\django4shop\shopapp\admin.py
+shopapp.models|1681882877738704500|C:\work\psou\django4shop\shopapp\models.py
+manage|1681882837918251600|C:\work\psou\django4shop\manage.py
+shopapp.tests|1681882877742724600|C:\work\psou\django4shop\shopapp\tests.py
+django4shop.__init__|1681882837223444400|C:\work\psou\django4shop\django4shop\__init__.py
+django4shop.wsgi|1681882837908792100|C:\work\psou\django4shop\django4shop\wsgi.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+1=C:\work\psou\django4shop\django4shop\settings.py
+5=C:\work\psou\django4shop\django4shop\wsgi.py
+8=shopapp.views
+9=C:\work\psou\django4shop\manage.py
+4=django4shop.asgi
+12=shopapp.apps
+2=django4shop.settings
+13=ShopappConfig
+10=manage
+7=C:\work\psou\django4shop\shopapp\views.py
+11=C:\work\psou\django4shop\shopapp\apps.py
+3=C:\work\psou\django4shop\django4shop\asgi.py
+6=django4shop.wsgi
+-- END DICTIONARY
+-- START TREE 1
+23
+all|1|ALLOWED_HOSTS!1^28#1*19@
+app|2|application!3^16#1*35@application!5^16#1*51@
+aut|1|AUTH_PASSWORD_VALIDATORS!1^101#1*19@
+bas|1|BASE_DIR!1^16#1*19@
+buy|1|buyFunc!7^40#5*66@
+car|1|cartFunc!7^16#5*66@
+dat|1|DATABASES!1^82#1*19@
+deb|1|DEBUG!1^26#1*19@
+def|1|DEFAULT_AUTO_FIELD!1^124#1*19@
+ins|1|INSTALLED_APPS!1^41#1*19@
+lan|1|LANGUAGE_CODE!1^107#1*19@
+mai|2|main!9^7#5*82@mainFunc!7^4#5*66@
+mid|1|MIDDLEWARE!1^51#1*19@
+pag|2|page1Func!7^8#5*66@page2Func!7^12#5*66@
+roo|1|ROOT_URLCONF!1^53#1*19@
+sec|1|SECRET_KEY!1^23#1*19@
+sho|1|ShopappConfig!11^4#7*97@
+sta|1|STATIC_URL!1^119#1*19@
+tem|1|TEMPLATES!1^69#1*19@
+tim|1|TIME_ZONE!1^109#1*19@
+url|0|
+use|2|USE_TZ!1^113#1*19@USE_I18N!1^111#1*19@
+wsg|1|WSGI_APPLICATION!1^71#1*19@
+-- END TREE
+-- START TREE 2
+2
+def|1|default_auto_field!13&11^5#5*99@
+nam|1|name!13&11^6#5*99@
+-- END TREE

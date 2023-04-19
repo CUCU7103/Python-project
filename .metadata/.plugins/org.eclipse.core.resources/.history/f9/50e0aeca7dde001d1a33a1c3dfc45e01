@@ -1,0 +1,44 @@
+from django.shortcuts import render
+
+# Create your views here.
+def mainFunc(request):
+    return render(request,'main.html')
+
+
+def page1Func(request):
+    return render(request,'page1.html')
+
+
+def page2Func(request):
+    return render(request,'page2.html')
+
+
+def cartFunc(request): # 장바구니 
+    name = request.POST.get("name")
+    price = request.POST["price"]
+    print(name,price)
+    product= {'name': name , "price": price}
+   
+    productlist = []
+    
+    if 'shop' in request.session: # 세션 키 확인하기
+        productlist = request.session['shop'] # 세션에 담긴 상품을 list에 넣고
+        productlist.append(product)
+        request.session['shop'] = productlist
+        
+    else: # 없으면 세션 생성 후 제품담기 
+        productlist.append(product)
+        request.session['shop'] = productlist
+        
+    print(productlist)
+    context = {}
+    context['products'] = request.session['shop']
+    
+    return render(request,"cart.html", context)
+    
+
+def buyFunc(request):
+    pass
+
+
+

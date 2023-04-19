@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<tr>
+		<td><img src ="/static/images/pic1.jpg" style="width: 30%"/> </td>
+		<td>
+		<pre>
+겔럭시탭
+25,213개 상품평
+809,000원 
+최대 3% 카드 즉시할인
+최대 15,437원 적립
+무료배송  다른 판매자 보기(7)
+내일(목) 4/20 도착 보장 (8시간 51분 내 주문 시 / 서울⋅경기 기준)
+내일(목) 4/20 새벽 7시 전 도착 보장 (오후 8시 45분 전 주문 시 / 서울⋅경기 기준) 
+		</pre>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+	<form action="cart" name="frm" method="post">{% csrf_token %}
+		 <input type="hidden" name="name" value="겔럭시탭">
+		 <input type="hidden" name="price" value="809000">
+		 <input type="submit" value="장바구니에 물건담기">
+	     <input type="button" value="이전화면" onclick="history.back()">
+    </form>
+	</tr>
+</table>
+</body>
+</html>

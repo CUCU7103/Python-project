@@ -1,0 +1,13 @@
+# 동 또는 리 이름으로 우편번호 자료 읽기
+
+try: 
+    # dong = input('동 이름 입력') 
+    dong = '개포'
+    # print(dong)
+    
+    with open(r'zipcode.txt', mode='r' , encoding='euc-kr') as f:
+        line = f.read()
+        print(line)
+    
+except Exception as e:
+    print("err: " , e)

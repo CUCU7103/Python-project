@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+자료 입력</p>
+<form action="/myapp/insert" method="post">{% csrf_token %}
+<!-- csrf 해킹 방지를 위해서 "django.middleware.csrf.CsrfViewMiddleware"로 post 접근을 막아놓았다. --> 
+<!-- 뒤에 토큰을 붙여야만 form에서 post가 사용가능해진다. -->
+	이름: <input type ="text" name="name"/></br>
+	<input type="submit" value="확인">
+</form>
+</body>
+</html>

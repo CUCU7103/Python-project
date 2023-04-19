@@ -1,0 +1,54 @@
+# 예외 처리 : 파일, 키보드, 네트워크, DB등의 외부 장치와의 작업 시 예기치 않은 에러 대처
+# 자바와 달리 강요는 아니다.
+
+def divide(a,b):
+    return a / b
+
+print('뭔가를 하다가...')
+
+# 
+# c = divide(5,2)
+# c = divide(5,0)  ZeroDivisixxxxxxonError
+
+try: # .java의 try-catch
+    c = divide(5,2)
+    # c = divide(5,0)
+    aa = [1,2]
+    print(aa[2])
+    
+    f = open('c:/work/nic.txt')
+    
+except ZeroDivisionError: # 해당 에러 발생시 수행되어진다.
+    print('두번째 수는 0을 주지 마세요')
+    
+except IndexError as e: 
+    print('인덱스 에러: ',e) # IndexError 인덱스 에러:  list index out of range
+    
+except Exception as err:
+    print('에러 : ', err)
+    
+finally:
+    print("에러 유무에 따라 상관없이 반드시 수행한다.")
+
+print('-----------')
+
+def PositiveDivide(a,b):
+    if(b < 0):
+        raise NegativeDivideErr(b) # 에러 발생시 해당 클래스로 넘긴다.
+    return a / b
+
+class NegativeDivideErr(Exception): # 오류발생시 받는 클래스
+    def __init__(self,value):
+        self.value = value
+try:
+    imsi = PositiveDivide(10, 2)
+    imsi2 = PositiveDivide(10, -2)
+    
+except NegativeDivideErr as e : 
+    print('에러 : 두번째 값이 ' ,e.value)
+except Exception as e:
+    print('와우 에러 :',e)
+
+
+
+print('프로그램 종료')

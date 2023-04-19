@@ -1,0 +1,14 @@
+MODULES_MANAGER_V3
+django3session.__init__|C:\work\psou\django3session\django3session\__init__.py
+django3session.asgi|C:\work\psou\django3session\django3session\asgi.py
+django3session.settings|C:\work\psou\django3session\django3session\settings.py
+django3session.urls|C:\work\psou\django3session\django3session\urls.py
+django3session.wsgi|C:\work\psou\django3session\django3session\wsgi.py
+manage|C:\work\psou\django3session\manage.py
+sessionapp.__init__|C:\work\psou\django3session\sessionapp\__init__.py
+sessionapp.admin|C:\work\psou\django3session\sessionapp\admin.py
+sessionapp.apps|C:\work\psou\django3session\sessionapp\apps.py
+sessionapp.migrations.__init__|C:\work\psou\django3session\sessionapp\migrations\__init__.py
+sessionapp.models|C:\work\psou\django3session\sessionapp\models.py
+sessionapp.tests|C:\work\psou\django3session\sessionapp\tests.py
+sessionapp.views|C:\work\psou\django3session\sessionapp\views.py

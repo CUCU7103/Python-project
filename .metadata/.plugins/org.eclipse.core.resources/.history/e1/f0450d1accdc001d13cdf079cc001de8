@@ -1,0 +1,15 @@
+# thread : light weigth process라고도 함.
+# process 내에서 수행되며 같은 실행단위를 공유한다.
+# multi thread로  mulit tasking 효과 (병렬처리)
+# 네트워크 등의 작업에 많이 쓰이고 있다.
+
+import threading, time
+
+def run(id):
+    for i in range(1,51):
+        print('id :{}-->{}'.format(id,i) )
+
+# thread를 사용하지 않은 경우 
+run(1)
+run(2)
+

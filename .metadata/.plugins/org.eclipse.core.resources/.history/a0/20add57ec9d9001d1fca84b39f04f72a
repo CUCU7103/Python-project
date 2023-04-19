@@ -1,0 +1,45 @@
+# 클래스의 상속
+class Person: 
+    say = '난 사람이야 ~' # 공유자원
+    nai = '20'  # 공유자원
+    # 프로토타입 클래스만 메소드를 가진다.
+    def __init__(self,nai):
+        print('Person 생성자')
+        self.nai = nai
+        
+    def printInfo(self):
+        print("나이 :{}, 이야기:{},".format(self.nai, self.say))
+        
+    def hello(self):
+        print('안녕')
+        
+person = Person('22')
+person.printInfo() #  나이 :22, 이야기:난 사람이야 ~,
+person.hello() # 안녕
+
+print('Employe--------------')
+
+class Employee(Person): # 상속 받음
+    say = '일하는 동물' # 부모의 변수는 은닉화 된다.
+    subject ='근로자'
+
+    def __init__(self):
+        print('Employee 생성자') # 자식의 생성자가 있으면 부모의 생성자를 호출하지 않음
+         
+    def printInfo(self): 
+        print('Employee의 printinfo')
+    
+    def empPrintInfo(self):
+        self.printInfo()
+
+emp = Employee()
+# emp.printInfo() # 부모의 멤버를 전부 사용이 가능하다.
+                # self는 주소를 달고 다닌다.
+                # 해당 멤버가 없으면 부모 클래스에서 값을 찾는다. 있으면 해당 값 사용함. 
+ 
+emp.empPrintInfo()               
+                
+                
+                
+                
+                

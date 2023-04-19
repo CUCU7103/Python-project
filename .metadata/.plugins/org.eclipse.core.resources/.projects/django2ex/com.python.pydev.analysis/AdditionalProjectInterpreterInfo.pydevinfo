@@ -1,0 +1,65 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\work\psou\.metadata\.plugins\org.eclipse.core.resources\.projects\django2ex\com.python.pydev.analysis\v2_indexcache
+django2ex.asgi|1681871396479212500|C:\work\psou\django2ex\django2ex\asgi.py
+django2ex.wsgi|1681871396489393700|C:\work\psou\django2ex\django2ex\wsgi.py
+myapp.views|1681872830845454200|C:\work\psou\django2ex\myapp\views.py
+django2ex.__init__|1681871395805909700|C:\work\psou\django2ex\django2ex\__init__.py
+myapp.migrations.__init__|1681871505969179100|C:\work\psou\django2ex\myapp\migrations\__init__.py
+django2ex.urls|1681872690016129800|C:\work\psou\django2ex\django2ex\urls.py
+myapp.models|1681871505966178400|C:\work\psou\django2ex\myapp\models.py
+manage|1681871396502899000|C:\work\psou\django2ex\manage.py
+myapp.admin|1681871505963180000|C:\work\psou\django2ex\myapp\admin.py
+django2ex.settings|1681871840328923600|C:\work\psou\django2ex\django2ex\settings.py
+myapp.apps|1681871506694998600|C:\work\psou\django2ex\myapp\apps.py
+myapp.tests|1681871505967179100|C:\work\psou\django2ex\myapp\tests.py
+myapp.__init__|1681871505968180000|C:\work\psou\django2ex\myapp\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+15
+4=django2ex.asgi
+6=django2ex.wsgi
+12=myapp.views
+15=MyappConfig
+7=C:\work\psou\django2ex\manage.py
+11=C:\work\psou\django2ex\myapp\views.py
+14=django2ex.urls
+8=manage
+2=django2ex.settings
+1=C:\work\psou\django2ex\django2ex\settings.py
+10=myapp.apps
+3=C:\work\psou\django2ex\django2ex\asgi.py
+5=C:\work\psou\django2ex\django2ex\wsgi.py
+13=C:\work\psou\django2ex\django2ex\urls.py
+9=C:\work\psou\django2ex\myapp\apps.py
+-- END DICTIONARY
+-- START TREE 1
+22
+all|1|ALLOWED_HOSTS!1^28#1*19@
+app|2|application!3^16#1*35@application!5^16#1*51@
+aut|1|AUTH_PASSWORD_VALIDATORS!1^101#1*19@
+bas|1|BASE_DIR!1^16#1*19@
+dat|1|DATABASES!1^82#1*19@
+deb|1|DEBUG!1^26#1*19@
+def|1|DEFAULT_AUTO_FIELD!1^124#1*19@
+ins|1|INSTALLED_APPS!1^41#1*19@
+lan|1|LANGUAGE_CODE!1^107#1*19@
+mai|1|main!7^7#5*66@
+mid|1|MIDDLEWARE!1^51#1*19@
+mya|1|MyappConfig!9^4#7*81@
+roo|1|ROOT_URLCONF!1^53#1*19@
+sec|1|SECRET_KEY!1^23#1*19@
+sel|1|selectFunc!11^6#5*98@
+sho|1|showFunc!11^3#5*98@
+sta|1|STATIC_URL!1^119#1*19@
+tem|1|TEMPLATES!1^69#1*19@
+tim|1|TIME_ZONE!1^109#1*19@
+url|1|urlpatterns!13^28#1*115@
+use|2|USE_I18N!1^111#1*19@USE_TZ!1^113#1*19@
+wsg|1|WSGI_APPLICATION!1^71#1*19@
+-- END TREE
+-- START TREE 2
+2
+def|1|default_auto_field!15&9^5#5*83@
+nam|1|name!15&9^6#5*83@
+-- END TREE

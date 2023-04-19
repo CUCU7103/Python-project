@@ -1,0 +1,38 @@
+# chat client
+import socket
+import threading
+import sys
+
+def handle(socket):
+    while True:
+        data = socket.recv(1024)
+        if not data:continue
+        print(data.decode('utf-8'))
+        
+sys.stdout.flush() 
+# 파이선의 표준 출력은 자동 버퍼링이 됨. 
+# 그래서 버퍼의 내용을 비울 필요가 있다.
+
+name = input('채팅 아이디 입력: ')
+cs = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # 서버와 통신하기 위해서는 소캣이 필요하다. tcp/ip 프로토콜
+cs.connect(('192.168.0.8',5555))
+cs.send(name.encode('utf-8')) # 아이디 전송
+ 
+th = threading.Thread(target=handle, args=(cs,))  
+# 사용자 스레드 정의함. thread 클래스는 arg줄때는 튜플형태이다.
+
+th.start()
+
+while True:
+    msg = input()
+    sys.stdout.flush()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,25 @@
+# 다른 모듈의 맴버(클래스) 참조하기 
+
+from pack1basic.test25other import Robot
+
+def main():
+    print('뭔가를 하다가')
+    robot = Robot() # 객체를 생성해서 넘김 
+    print('이름 : ', robot.name)
+    print('에너지 : ', robot.energy)
+    print('필살기 : ', robot.attack())
+    print()
+    
+    robot2 = Robot # 원형 클래스의 주소를 넘김
+    print('이름 : ', robot2.name)
+    print('에너지 : ', robot2.energy)
+    print('필살기2 : ', robot2.attack(robot2)) 
+    # 주소를 넘겨받은 뒤 메소드 실행시 주소를 넘겨주어야 한다. 
+    # self를 만족시켜야 하기 때문이다. => self는 주소를 넣어야한다는 것, 기능은 this와 비슷
+    
+    robot2.name = '앤트맨' # 원형 클래스의 값이 변경되었기 때문이다.
+    print('이름 : ', robot2.name)
+    print('이름', robot.name)
+    
+if __name__ =='__main__':
+    main()

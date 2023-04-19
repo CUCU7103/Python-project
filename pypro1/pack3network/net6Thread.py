@@ -1,0 +1,25 @@
+# 스레드간 공유자원 사용 시 충돌방지 : 스레드 비활성화 작업 진행
+
+import threading, time
+
+g_count = 0 # 전역변수는 스레드의 공유자원이 된다, 기본적으로 그러함.
+lock = threading.Lock() # 락 생성함.
+
+def threadCount(id,count):
+    global g_count # 전역변수
+    for i in range(count):
+        lock.acquire() 
+         # 현재 스레드가 공유자원을 처리하는 동안 다른 스레드는 락이 걸린다.
+         # 즉 다른 스레드는 대기 상태가 되는 것이다.
+        print('id %s ==> count:%s, g_count:%s'%(id,i,g_count))
+        g_count = g_count+1 # 
+        lock.release() # 작업이 끝난 후 lock을 해제한다.
+        
+for i in range(1,6):
+    threading.Thread(target=threadCount, args= (i,5)).start()
+    
+    # 락을 하지 않을시  id 1 ==> count:3, g_count:3 id 2 ==> count:0, g_count:3 와 같이 공유자원에서의 충돌발생함.
+    
+time.sleep(2)
+print('최종 Gcount 값', g_count)
+print('프로그램 종료')

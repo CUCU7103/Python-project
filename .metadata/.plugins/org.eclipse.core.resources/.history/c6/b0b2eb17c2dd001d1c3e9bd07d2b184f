@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body><!-- templates는 view의 역할이다. -->
+<h1>환영합니다</h1>
+첫번째 장고 프로젝트
+<br/>
+이름은 {{name}} 나이 {{age}} <!--{{}}를 사용한다. 서버에서 처리하고 넘어온다 thyleft와 유사하다. -->
+</body>
+</html>

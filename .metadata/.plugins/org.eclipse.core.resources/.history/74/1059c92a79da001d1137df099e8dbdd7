@@ -1,0 +1,5 @@
+# 파일 입출력 
+
+import os
+
+print(os.getcwd())

@@ -1,0 +1,41 @@
+import MySQLdb
+
+config = { 
+    'host':'127.0.0.1',
+    'user':'root',
+    'password':'123',
+    'database':'test',
+    'port':3306,
+    'charset':'utf8',
+    'use_unicode':True
+}
+
+try: 
+    conn = MySQLdb.connect(**config) 
+    cursor = conn.cursor()
+    bnum = input('부서번호 입력')
+    
+    if bnum in ['10','20','30','40']:
+        sql = "SELECT jikwon_no, jikwon_name, buser_name, jikwon_jik FROM jikwon "
+         # 긴 문자열을 나누는 방법입니다.  
+        sql += "INNER JOIN buser ON buser_num = buser_no where buser_num ={0}".\
+        format(bnum)
+        
+        cursor.execute(sql)
+        print('사번 이름 부서명 직급' )
+    
+        for data in cursor.fetchall():
+            # print(data)
+            print('%s %s %s %s'%data)
+
+        count = cursor.execute(sql)
+        print('인원수: ', count, '명')
+    else:
+        print('정확한 부서 번호를 입력하세요')
+        
+except Exception as e:
+    print('err: '+e)
+    conn.rollback()
+finally:
+    cursor.close()
+    conn.close()

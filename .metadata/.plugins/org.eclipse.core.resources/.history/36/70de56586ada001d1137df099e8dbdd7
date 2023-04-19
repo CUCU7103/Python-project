@@ -1,0 +1,75 @@
+from abc import abstractmethod, ABCMeta
+
+
+class Employee(metaclass=ABCMeta):
+       
+        def __init__(self,irum,nai):
+            self.irum = irum
+            self.nai = nai 
+        
+        @abstractmethod
+        def pay(self):
+            pass
+        
+        @abstractmethod
+        def data_print(self):
+            pass
+        
+ 
+ 
+class Tempopary(Employee):
+        
+        def __init__(self,irum,nai,ilsu,ildang):
+            super().__init__(irum, nai)
+            self.ilsu = ilsu
+            self.ildang =ildang
+        
+        def pay(self):
+            pay = self.ilsu * self.ildang
+            return pay
+        
+        def data_print(self):
+            print('이름 {} , 나이 {} , 월급 {}'.format(self.irum,self.nai,self.pay()))
+            
+        
+        
+t = Tempopary('홍길동',25,20,15000)
+t.data_print()
+
+class Regular(Employee):
+    
+    def __init__(self, irum, nai, salary):
+        self.salary = salary
+        super().__init__(irum, nai)
+     
+    def pay(self):
+        pass
+     
+    def data_print(self):
+        print('이름 {}, 나이 {}, 급여 {}'.format(self.irum, self.nai, self.salary))
+
+        
+r = Regular('한국인', 27,3500000)
+r.data_print()
+
+class Salesman(Regular):
+    rpay = 0
+    def __init__(self,irum,nai,sales,commission,salary):
+        self.sales = sales
+        self.commission = commission
+        super().__init__(irum,nai,salary)
+        
+        
+    def pay(self):
+        spay = self.sales * self.commission
+        print(spay)
+        self.rpay = self.salary  + spay
+        
+    def data_print(self):
+        print("이름 {} , 나이 {} , 수령액 {}".format(self.irum,self.nai,self.pay()))
+        
+s = Salesman('손오공',29,120000,500000000,0.25)
+s.data_print()
+    
+    
+           

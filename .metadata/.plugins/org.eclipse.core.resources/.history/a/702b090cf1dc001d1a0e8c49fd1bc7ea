@@ -1,0 +1,18 @@
+mdays = int(input())
+# if mdays % 4 == 0 && mdays % 100 !=0 || mdays % 400 == 0:
+#         print('{}년은 윤년 ".format(mdays,))
+# else :
+#         print('{}년은 평년 ".format(mdays,))
+#
+
+if mdays % 4 == 0 & mdays % 100 !=0 | mdays % 400 == 0:
+        print('{}년은 윤년 '.format(mdays))
+else :
+        print('{}년은 평년 '.format(mdays))
+
+
+# mdays = int(input())
+# if mdays % 4 == 0 and mdays % 100 != 0 or mdays % 400 == 0:
+#     print('{}년은 윤년'.format(mdays))
+# else:
+#     print('{}년은 평년'.format(mdays))

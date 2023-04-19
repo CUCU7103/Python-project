@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- # 기본적으로 서버를 부를때는 index.html(요청명)이다. -->
+<h2>메인 페이지</h2>
+<ul>
+	<li><a href="cgi-bin/hello.py">hello</a></li> <!-- 스크립트 파일은 cgi에 넣는다. -->
+	<li><a href="cgi-bin/world.py">world</a></li>
+	<li><a href="cgi-bin/my.py?name=tom&age=23">my</a></li>
+	<li><a href="friend.html">friend</a></li>
+	<li><a href="cgi-bin/sangpum.py" >sangpum</a></li>
+</ul>
+</body>
+</html>

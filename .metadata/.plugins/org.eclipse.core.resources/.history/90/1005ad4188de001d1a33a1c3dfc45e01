@@ -1,0 +1,28 @@
+"""
+URL configuration for django5localdb project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path
+from dbapp import views
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    # 관리자 기능 실행 하려면 cmd창에서 아이디 비번 등록해야함.
+    # localhost/admin으로 접속한다.
+    # 여기서 작성한 테이블을 확인할 수있다.
+    path('',views.Main),
+    path('showdata/',views.Datashow),
+] 

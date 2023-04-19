@@ -1,0 +1,14 @@
+MODULES_MANAGER_V3
+django2ex.__init__|C:\work\psou\django2ex\django2ex\__init__.py
+django2ex.asgi|C:\work\psou\django2ex\django2ex\asgi.py
+django2ex.settings|C:\work\psou\django2ex\django2ex\settings.py
+django2ex.urls|C:\work\psou\django2ex\django2ex\urls.py
+django2ex.wsgi|C:\work\psou\django2ex\django2ex\wsgi.py
+manage|C:\work\psou\django2ex\manage.py
+myapp.__init__|C:\work\psou\django2ex\myapp\__init__.py
+myapp.admin|C:\work\psou\django2ex\myapp\admin.py
+myapp.apps|C:\work\psou\django2ex\myapp\apps.py
+myapp.migrations.__init__|C:\work\psou\django2ex\myapp\migrations\__init__.py
+myapp.models|C:\work\psou\django2ex\myapp\models.py
+myapp.tests|C:\work\psou\django2ex\myapp\tests.py
+myapp.views|C:\work\psou\django2ex\myapp\views.py

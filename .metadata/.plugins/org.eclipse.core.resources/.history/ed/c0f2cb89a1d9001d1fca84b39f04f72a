@@ -1,0 +1,14 @@
+# 다른 모듈의 맴버(클래스) 참조하기 
+
+from pack1basic.test25other import Robot
+
+def main():
+    print('뭔가를 하다가')
+    robot = Robot()
+    print('이름 : ', robot.name)
+    print('에너지 : ', robot.energy)
+    print('필살기 : ', robot.attack())
+    
+    
+if __name__ =='__main__':
+    main()

@@ -1,0 +1,27 @@
+# 멀티 채팅 서버 - socket, thread가 필요하다.
+
+import socket
+import threading
+
+ss = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+ss.bind(('192.168.0.9',5555))
+ss.listen()
+print('채팅 서버 서비스 시작....')
+
+users = []
+
+def chatUser(conn):
+    name = conn.recv(1024)
+    data = '^^ ' + name.decode('utf-8') + '님 입장'
+    print(data)
+    
+    try: 
+        pass
+    except:
+        users.remove(conn)
+while True: # 클라이언트의 접속을 계속 기다린다. (무한루프를 통해서)
+    conn, addr = ss.accept()
+    users.append(conn) # 해당 클라이언트의 소캣을 list에 저장한다.
+    th = threading.Thread(target=chatUser,args=(conn,))
+    th.start()
+    

@@ -1,0 +1,16 @@
+# 웹 서버 : CGI 
+# Common Gateway Interface(CGI) 
+# 서버와 애플리케이션 간에 데이터를 주고 받는 방식 또는 컨벤션을 CGI라고 한다
+# 대화형 웹페이지를 만들수 있다.
+
+from http.server import CGIHTTPRequestHandler, HTTPServer
+
+port = 8888
+
+class Handler(CGIHTTPRequestHandler): # 서블릿과 유사하다.
+    cgi_directiries=['/cgi-bin']    # 경로를 적어줘야한다.?
+                                    # 기본적으로 서버를 부를때는 index.html(요청명)이다.
+    
+serv = HTTPServer(('192.168.0.8',port),Handler)
+print('웹 서비스 시작....')
+serv.serve_forever()

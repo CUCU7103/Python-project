@@ -1,0 +1,24 @@
+# 클래스의 상속
+class Person: 
+    say = '난 사람이야 ~'
+    nai = '20' 
+    def __init__(self,nai):
+        print('Person 생성자')
+        self.nai = nai
+        
+    def printInfo(self):
+        print("나이 :{}, 이야기:{},".format(self.nai, self.say))
+        
+    def hello(self):
+        print('안녕')
+        
+person = Person('22')
+person.printInfo() #  나이 :22, 이야기:난 사람이야 ~,
+person.hello() # 안녕
+
+print('Employe--------------')
+
+class Employee(Person): # 상속 받음
+    pass
+emp = Employee()
+emp.printInfo() # 부모의 멤버를 전부 사용이 가능하다.

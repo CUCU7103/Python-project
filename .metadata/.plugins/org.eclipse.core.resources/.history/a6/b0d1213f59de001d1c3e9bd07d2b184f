@@ -1,0 +1,13 @@
+# main urls외 별도의 urls 생성함.
+from django.urls import path
+from gpapp import views # 반드시 import가 필요하다.
+
+urlpatterns = [
+    
+    path('insert',views.insertFunc),
+    path('select',views.selectFunc),
+    path('update',views.upFunc),
+    
+    
+
+]

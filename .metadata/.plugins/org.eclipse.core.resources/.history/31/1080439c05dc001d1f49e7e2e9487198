@@ -1,0 +1,32 @@
+# 동 또는 리 이름으로 우편번호 자료 읽기
+
+try: 
+    dong = input('동 이름  입력 : ') 
+    # dong = '개포'
+    # print(dong)
+    
+    # 자료 읽기
+    with open(r'zipcode.txt', mode='r' , encoding='euc-kr') as f:
+        line = f.readline() # 한줄 읽기
+        # print(line)
+        while line:
+            # lines = line.split('\t') # tab키를 기준으로 나눈다.
+            lines = line.split(chr(9)) # 아스키 코드로 tab이 9
+            # print('a','\t','b')
+            # print('a', chr(9),'b')
+            print(type(lines))
+            if lines[3].startswith(dong): # 입력 받은 동 이름으로 시작된다면 출력한다. startswith(조건) str 
+                # print('와우 맞아')
+                print('[' + lines[0] + ']'+ lines[1] +' ' + lines[2] + " " + lines[3]+" "+lines[4])
+                # [135-806]서울 강남구 개포1동 경남아파트 
+            line = f.readline() # 무한반복 탈출
+            
+except Exception as e:
+    print("err: " , e)
+    
+    
+    
+    
+    
+    
+    

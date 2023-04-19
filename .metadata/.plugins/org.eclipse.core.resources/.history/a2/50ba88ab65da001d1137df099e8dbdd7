@@ -1,0 +1,2 @@
+
+class AbstractClass(metaclass=ABCMeta)

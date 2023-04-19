@@ -1,0 +1,20 @@
+# 상품자료 출력
+import MySQLdb
+import pickle
+
+with open('mydb.dat','rb') as obj:
+    config = pickle.load(obj)
+print("Content-Type:text/html;charset=utf-8\n")  
+
+print("<html><body>") # 여기서의 print는 값을 서버로 전송하는 것이다.
+print("<table border='1'>")
+print("<tr><th>코드</th><th><th>품명</th><th>수령</th><th>단가</th><th>")
+try:
+    pass
+except Exception as e:
+    print('err :', e)
+finally:
+    cursor.close()
+    conn.close()
+print("</body></html>")
+    

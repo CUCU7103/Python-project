@@ -1,0 +1,8 @@
+# DB 연동 프로그래밍 - 개인용 DB(sqlite3) 사용하기
+
+import sqlite3
+print(sqlite3.sqlite_version)
+
+print('---------------------------')
+
+conn = sqlite3.connect('mid5_ex.db')

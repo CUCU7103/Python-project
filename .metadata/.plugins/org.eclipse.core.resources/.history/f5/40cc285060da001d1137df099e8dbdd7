@@ -1,0 +1,10 @@
+# Abstract class
+from abc import abstractmethod, ABCMeta
+
+class AbstractClass(metaclass=ABCMeta): # 추상클래스로 설정함.  metaclass=ABCMeta
+    @abstractmethod  
+    def abcMethod(self): # @abstractmethod로 장식된 추상메소드
+        pass # 추상메소드에는 내용이 없어야 함.
+    
+kbs = AbstractClass()
+kbs.abcMethod()    

@@ -1,0 +1,17 @@
+# 동 또는 리 이름으로 우편번호 자료 읽기
+
+try: 
+    # dong = input('동 이름 입력') 
+    dong = '개포'
+    # print(dong)
+    
+    # 자료 읽기
+    with open(r'zipcode.txt', mode='r' , encoding='euc-kr') as f:
+        line = f.readline()
+        # print(line)
+        # while line:
+        lines = line.split('\t') # tab키를 기준으로 나눈다.
+        print(lines)
+    
+except Exception as e:
+    print("err: " , e)

@@ -1,0 +1,15 @@
+MODULES_MANAGER_V3
+django2.__init__|C:\work\psou\django2\django2\__init__.py
+django2.asgi|C:\work\psou\django2\django2\asgi.py
+django2.settings|C:\work\psou\django2\django2\settings.py
+django2.urls|C:\work\psou\django2\django2\urls.py
+django2.wsgi|C:\work\psou\django2\django2\wsgi.py
+gpapp.__init__|C:\work\psou\django2\gpapp\__init__.py
+gpapp.admin|C:\work\psou\django2\gpapp\admin.py
+gpapp.apps|C:\work\psou\django2\gpapp\apps.py
+gpapp.migrations.__init__|C:\work\psou\django2\gpapp\migrations\__init__.py
+gpapp.models|C:\work\psou\django2\gpapp\models.py
+gpapp.tests|C:\work\psou\django2\gpapp\tests.py
+gpapp.urls|C:\work\psou\django2\gpapp\urls.py
+gpapp.views|C:\work\psou\django2\gpapp\views.py
+manage|C:\work\psou\django2\manage.py

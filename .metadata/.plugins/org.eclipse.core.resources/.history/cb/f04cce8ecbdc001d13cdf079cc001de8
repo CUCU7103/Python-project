@@ -1,0 +1,4 @@
+# thread : light weigth process라고도 함.
+# process 내에서 수행되며 같은 실행단위를 공유한다.
+# multi thread로  mulit tasking 효과 (병렬처리)
+# 네트워크 등의 작업에 많이 쓰이고 있다.

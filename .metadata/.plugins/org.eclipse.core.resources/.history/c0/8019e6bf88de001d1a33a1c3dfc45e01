@@ -1,0 +1,12 @@
+from django.shortcuts import render
+from dbapp.models import Article
+
+# Create your views here.
+def Main(request):
+    return render(request, 'main.html')
+
+def Datashow(request):
+    datas = Article.objects.all()
+    print(datas)
+    print(datas[0].name)
+    return render(request, 'list.html')

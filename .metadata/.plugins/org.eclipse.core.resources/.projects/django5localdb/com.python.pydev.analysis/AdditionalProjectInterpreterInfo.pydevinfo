@@ -1,0 +1,78 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\work\psou\.metadata\.plugins\org.eclipse.core.resources\.projects\django5localdb\com.python.pydev.analysis\v2_indexcache
+django5localdb.settings|1681888173515629100|C:\work\psou\django5localdb\django5localdb\settings.py
+django5localdb.__init__|1681888076315237700|C:\work\psou\django5localdb\django5localdb\__init__.py
+dbapp.admin|1681888152942936100|C:\work\psou\django5localdb\dbapp\admin.py
+dbapp.migrations.0001_initial|1681889018272496700|C:\work\psou\django5localdb\dbapp\migrations\0001_initial.py
+django5localdb.urls|1681888451578586100|C:\work\psou\django5localdb\django5localdb\urls.py
+dbapp.views|1681888445829087700|C:\work\psou\django5localdb\dbapp\views.py
+manage|1681888077250596800|C:\work\psou\django5localdb\manage.py
+django5localdb.asgi|1681888077231597300|C:\work\psou\django5localdb\django5localdb\asgi.py
+django5localdb.wsgi|1681888077241597600|C:\work\psou\django5localdb\django5localdb\wsgi.py
+dbapp.models|1681889077970904300|C:\work\psou\django5localdb\dbapp\models.py
+dbapp.__init__|1681888152948852300|C:\work\psou\django5localdb\dbapp\__init__.py
+dbapp.tests|1681888152946854700|C:\work\psou\django5localdb\dbapp\tests.py
+dbapp.migrations.__init__|1681888152956916400|C:\work\psou\django5localdb\dbapp\migrations\__init__.py
+dbapp.apps|1681888153849720800|C:\work\psou\django5localdb\dbapp\apps.py
+-- END DISKCACHE
+-- START DICTIONARY
+21
+2=django5localdb.settings
+15=C:\work\psou\django5localdb\dbapp\migrations\0001_initial.py
+17=C:\work\psou\django5localdb\django5localdb\urls.py
+3=C:\work\psou\django5localdb\django5localdb\asgi.py
+11=C:\work\psou\django5localdb\dbapp\apps.py
+21=Migration
+19=Article
+16=dbapp.migrations.0001_initial
+18=django5localdb.urls
+20=DbappConfig
+13=C:\work\psou\django5localdb\manage.py
+10=dbapp.views
+14=manage
+4=django5localdb.asgi
+6=django5localdb.wsgi
+8=dbapp.models
+9=C:\work\psou\django5localdb\dbapp\views.py
+5=C:\work\psou\django5localdb\django5localdb\wsgi.py
+7=C:\work\psou\django5localdb\dbapp\models.py
+1=C:\work\psou\django5localdb\django5localdb\settings.py
+12=dbapp.apps
+-- END DICTIONARY
+-- START TREE 1
+22
+all|1|ALLOWED_HOSTS!1^28#1*19@
+app|2|application!3^16#1*35@application!5^16#1*51@
+art|1|Article!7^4#7*65@
+aut|1|AUTH_PASSWORD_VALIDATORS!1^101#1*19@
+bas|1|BASE_DIR!1^16#1*19@
+dat|2|DATABASES!1^82#1*19@Datashow!9^7#5*82@
+dba|1|DbappConfig!11^4#7*97@
+deb|1|DEBUG!1^26#1*19@
+def|1|DEFAULT_AUTO_FIELD!1^124#1*19@
+ins|1|INSTALLED_APPS!1^41#1*19@
+lan|1|LANGUAGE_CODE!1^107#1*19@
+mai|2|main!13^7#5*114@Main!9^4#5*82@
+mid|1|MIDDLEWARE!1^51#1*19@
+mig|1|Migration!15^6#7*129@
+roo|1|ROOT_URLCONF!1^53#1*19@
+sec|1|SECRET_KEY!1^23#1*19@
+sta|1|STATIC_URL!1^119#1*19@
+tem|1|TEMPLATES!1^69#1*19@
+tim|1|TIME_ZONE!1^109#1*19@
+url|1|urlpatterns!17^26#1*147@
+use|2|USE_I18N!1^111#1*19@USE_TZ!1^113#1*19@
+wsg|1|WSGI_APPLICATION!1^71#1*19@
+-- END TREE
+-- START TREE 2
+8
+cod|1|code!19&7^8#5*67@
+def|1|default_auto_field!20&11^5#5*99@
+dep|1|dependencies!21&15^10#5*131@
+ini|1|initial!21&15^8#5*131@
+nam|2|name!20&11^6#5*99@name!19&7^9#5*67@
+ope|1|operations!21&15^31#5*131@
+pri|2|price2!19&7^11#5*67@price!19&7^10#5*67@
+pub|1|pub_date!19&7^12#5*67@
+-- END TREE

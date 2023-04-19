@@ -1,0 +1,15 @@
+MODULES_MANAGER_V3
+django5ex.__init__|C:\work\psou\django5ex\django5ex\__init__.py
+django5ex.asgi|C:\work\psou\django5ex\django5ex\asgi.py
+django5ex.settings|C:\work\psou\django5ex\django5ex\settings.py
+django5ex.urls|C:\work\psou\django5ex\django5ex\urls.py
+django5ex.wsgi|C:\work\psou\django5ex\django5ex\wsgi.py
+manage|C:\work\psou\django5ex\manage.py
+myfriend.__init__|C:\work\psou\django5ex\myfriend\__init__.py
+myfriend.admin|C:\work\psou\django5ex\myfriend\admin.py
+myfriend.apps|C:\work\psou\django5ex\myfriend\apps.py
+myfriend.migrations.0001_initial|C:\work\psou\django5ex\myfriend\migrations\0001_initial.py
+myfriend.migrations.__init__|C:\work\psou\django5ex\myfriend\migrations\__init__.py
+myfriend.models|C:\work\psou\django5ex\myfriend\models.py
+myfriend.tests|C:\work\psou\django5ex\myfriend\tests.py
+myfriend.views|C:\work\psou\django5ex\myfriend\views.py

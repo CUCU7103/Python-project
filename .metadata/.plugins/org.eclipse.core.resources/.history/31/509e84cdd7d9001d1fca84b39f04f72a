@@ -1,0 +1,47 @@
+# 다중 상속
+class Tiger: 
+    data = "호랑이 세계"
+    
+    def Cry(self):
+        print('호랑이 : 어흥')
+    
+    def Eat(self):
+        print('맹수는 생고기를 좋아함.')
+        
+class Lion:
+    
+    def Cry(self):
+        print('사자 : 으르렁')
+    
+    def Hobby(self):
+        print('백수의 왕은 프로그래밍')
+        
+class Liger1(Tiger,Lion): # 맴버가 중복됬을 시 먼저 적은 클래스가 우선순위를 가진다. 
+    pass
+
+lig1 = Liger1()
+lig1.Cry()
+lig1.Eat()
+lig1.Hobby()
+
+print()
+
+class Liger2(Lion, Tiger):
+    data ="라이거 만세" # 은닉화
+    
+    def play(self):
+        print('play는 라이거 고유메소드')
+        
+    def Hobby(self): # 메소드 오버라이딩
+        print('라이거는 사색을 즐김')
+    
+    def show(self):
+        self.Hobby()
+        super.Hobby()
+        print(self.data," " , super().data)        
+        
+lig2 = Liger2()
+lig2.Cry()      
+        
+        
+        

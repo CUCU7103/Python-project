@@ -1,0 +1,65 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\work\psou\.metadata\.plugins\org.eclipse.core.resources\.projects\django3session\com.python.pydev.analysis\v2_indexcache
+django3session.__init__|1681874196645616400|C:\work\psou\django3session\django3session\__init__.py
+sessionapp.models|1681874219236803100|C:\work\psou\django3session\sessionapp\models.py
+django3session.urls|1681876036358505300|C:\work\psou\django3session\django3session\urls.py
+sessionapp.__init__|1681874219238827300|C:\work\psou\django3session\sessionapp\__init__.py
+django3session.asgi|1681874197306081100|C:\work\psou\django3session\django3session\asgi.py
+django3session.settings|1681874283055516500|C:\work\psou\django3session\django3session\settings.py
+manage|1681874197336692200|C:\work\psou\django3session\manage.py
+sessionapp.views|1681913294022127300|C:\work\psou\django3session\sessionapp\views.py
+sessionapp.migrations.__init__|1681874219240662700|C:\work\psou\django3session\sessionapp\migrations\__init__.py
+sessionapp.admin|1681874219232437700|C:\work\psou\django3session\sessionapp\admin.py
+sessionapp.tests|1681874219237807100|C:\work\psou\django3session\sessionapp\tests.py
+django3session.wsgi|1681874197330691700|C:\work\psou\django3session\django3session\wsgi.py
+sessionapp.apps|1681874219953050700|C:\work\psou\django3session\sessionapp\apps.py
+-- END DISKCACHE
+-- START DICTIONARY
+15
+11=C:\work\psou\django3session\sessionapp\apps.py
+14=django3session.urls
+6=django3session.asgi
+2=django3session.settings
+7=C:\work\psou\django3session\manage.py
+8=manage
+10=sessionapp.views
+5=C:\work\psou\django3session\django3session\asgi.py
+15=SessionappConfig
+1=C:\work\psou\django3session\django3session\settings.py
+4=django3session.wsgi
+3=C:\work\psou\django3session\django3session\wsgi.py
+9=C:\work\psou\django3session\sessionapp\views.py
+12=sessionapp.apps
+13=C:\work\psou\django3session\django3session\urls.py
+-- END DICTIONARY
+-- START TREE 1
+22
+all|1|ALLOWED_HOSTS!1^28#1*19@
+app|2|application!3^16#1*35@application!5^16#1*51@
+aut|1|AUTH_PASSWORD_VALIDATORS!1^101#1*19@
+bas|1|BASE_DIR!1^16#1*19@
+dat|1|DATABASES!1^82#1*19@
+deb|1|DEBUG!1^26#1*19@
+def|1|DEFAULT_AUTO_FIELD!1^124#1*19@
+ins|1|INSTALLED_APPS!1^41#1*19@
+lan|1|LANGUAGE_CODE!1^107#1*19@
+mai|2|main!7^7#5*66@mainFunc!9^6#5*82@
+mid|1|MIDDLEWARE!1^51#1*19@
+roo|1|ROOT_URLCONF!1^53#1*19@
+sec|1|SECRET_KEY!1^23#1*19@
+ses|1|SessionappConfig!11^4#7*97@
+set|1|setOsFunc!9^11#5*82@
+sho|1|showOsFunc!9^23#5*82@
+sta|1|STATIC_URL!1^119#1*19@
+tem|1|TEMPLATES!1^69#1*19@
+tim|1|TIME_ZONE!1^109#1*19@
+url|1|urlpatterns!13^27#1*115@
+use|2|USE_I18N!1^111#1*19@USE_TZ!1^113#1*19@
+wsg|1|WSGI_APPLICATION!1^71#1*19@
+-- END TREE
+-- START TREE 2
+2
+def|1|default_auto_field!15&11^5#5*99@
+nam|1|name!15&11^6#5*99@
+-- END TREE

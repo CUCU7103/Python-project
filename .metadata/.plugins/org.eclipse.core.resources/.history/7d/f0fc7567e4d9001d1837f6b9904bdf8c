@@ -1,0 +1,25 @@
+# 출력문구
+# 동전을 입력하세요 
+# 커피 몇잔을 원하시나요?
+
+class CoinIn:
+    def __init__(self):
+        input('동전을 넣으세요')
+        coin = input()
+        input('몇 잔이 필요한가요')
+        cupCount = input()
+        print(coin, cupCount)
+s = CoinIn()  
+
+
+
+
+
+
+
+
+
+
+
+# class Machine:
+#     def showData

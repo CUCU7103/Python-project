@@ -1,0 +1,46 @@
+# 메소드 오버라이딩 
+
+class Parent:
+    def printData(self): # 오버라이드 할 메소드
+        pass
+
+class Child1(Parent):
+    def printData(self):
+        print('chlid1에서 메소드 오버라이딩 ')
+    
+class Child2(Parent):
+    def printData(self):
+        print('chlid2에서 메소드 오버라이딩 ')
+        print('부모클래스와 동일한 이름을 가진 메소드를 자식클래스에서 재정의함')
+    
+    def abc(self):
+        print('Child 2 고유메소드이다.')
+
+c1 = Child1()   
+c1.printData()
+print(id(c1))
+c2 = Child2()
+c2.printData()
+
+print('다형성--------')
+# par = Parent()
+par = c1
+par.printData()
+
+print()
+par = c2
+par.printData()   
+par.abc() # Override시 제약이 없다. 오버라이드된 메소드이외의 다른 메소드도 부를 수 있다.  
+
+print('#################################')
+plist = [c1,c2]
+for item in plist:
+    item.printData()
+
+
+
+
+
+
+
+  

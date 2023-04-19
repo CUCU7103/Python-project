@@ -1,0 +1,14 @@
+MODULES_MANAGER_V3
+django4shop.__init__|C:\work\psou\django4shop\django4shop\__init__.py
+django4shop.asgi|C:\work\psou\django4shop\django4shop\asgi.py
+django4shop.settings|C:\work\psou\django4shop\django4shop\settings.py
+django4shop.urls|C:\work\psou\django4shop\django4shop\urls.py
+django4shop.wsgi|C:\work\psou\django4shop\django4shop\wsgi.py
+manage|C:\work\psou\django4shop\manage.py
+shopapp.__init__|C:\work\psou\django4shop\shopapp\__init__.py
+shopapp.admin|C:\work\psou\django4shop\shopapp\admin.py
+shopapp.apps|C:\work\psou\django4shop\shopapp\apps.py
+shopapp.migrations.__init__|C:\work\psou\django4shop\shopapp\migrations\__init__.py
+shopapp.models|C:\work\psou\django4shop\shopapp\models.py
+shopapp.tests|C:\work\psou\django4shop\shopapp\tests.py
+shopapp.views|C:\work\psou\django4shop\shopapp\views.py

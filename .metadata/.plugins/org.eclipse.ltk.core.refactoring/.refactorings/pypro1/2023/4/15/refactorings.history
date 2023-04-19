@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;pypro1/pack1basic/test27has-a.py&apos; to &apos;test27has_a.py&apos;" description="Rename resource &apos;test27has-a.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pack1basic/test27has-a.py" name="test27has_a.py" stamp="1681354953241" updateReferences="true"/>
+</session>

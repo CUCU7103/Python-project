@@ -1,0 +1,19 @@
+# 다른 모듈의 맴버(클래스) 참조하기 
+
+from pack1basic.test25other import Robot
+
+def main():
+    print('뭔가를 하다가')
+    robot = Robot() # 객체를 생성해서 넘김 
+    print('이름 : ', robot.name)
+    print('에너지 : ', robot.energy)
+    print('필살기 : ', robot.attack())
+    print()
+    
+    robot2 = Robot # 원형 클래스의 주소를 넘김
+    print('이름 : ', robot2.name)
+    print('에너지 : ', robot2.energy)
+    print('필살기2 : ', robot2.attack())
+    
+if __name__ =='__main__':
+    main()

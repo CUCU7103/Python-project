@@ -1,0 +1,14 @@
+# client side : socket 객체를 생성한다.
+from socket import *
+
+clientsock = socket(AF_INET, SOCK_STREAM) # 소캣 모듈에 들어있는 정보들....
+
+clientsock.connect(('192.168.0.9',7878))  # 능동적으로 서버에 접속함.
+clientsock.send('누구야 '.encode(encoding = 'utf_8')) # 메시지 전달, errors='strict'은 생략이 가능하다.
+# data는 'sequence binary data'로 전송이 된다. packet(Header+Body)단위
+
+re_message = clientsock.recv(1024).decode()
+print('수신된 자료 : ' , re_message)
+clientsock.close() # 연결 끊기
+
+

@@ -1,0 +1,52 @@
+# class 
+# 파이썬에선는 전부 public이다..
+
+class Car:  # 객체로 취급되어진다.
+    handle  = 0 # 맴버변수
+    speed = 0
+    
+    def __init__ (self, name, speed): 
+        self.name = name  # 자바와의 다른점이다.
+        self.speed = speed
+    
+    def showData(self):
+        km = '킬로미터'  # 지역변수
+        msg = '속도' + str(self.speed) + km # self는 this라고 생각,
+                                            #  맴버변수를 사용할때는 self가 선행되어야한다.
+        return  msg  
+print(id(Car), type(Car))   
+print(Car.handle) # 원형(prototype) 클래스의 맴버 호출함.
+                  # 원형 클래스는 공유자원을 갖고있다.
+                  
+
+
+
+car1 = Car('tom', 5) # 생성자를 호출하는 것 (car1, tom, speed) => (self, name, speed)로 들어감.
+                     # Car type의 오브젝트가 생성되었다. 자바하고 다른 점은 new 키워드가 붙지 않는다는 것,
+                     # instance 됨 Car type 객체가 생성이 되었다.
+                     # 원형 클래스에서 파생되어졌다 단 생성자를 통해 가져간 변수만 들어있다. 즉 사용하는 것들만 불러감
+                     # 없는 값들은 자동적으로 원형클래스에서 찾아진다.
+                     # 여기에는 handle 값이 들어있지 않다.
+print('car1:', car1.handle, car1.name, car1.speed)
+car1.color = '파랑'
+print('car1: ' , car1.color) # car1 객체에 color 멤버를 추가함
+
+
+print()
+car2 = Car('james', 7) # Car type의 오브젝트가 생성되었다. 
+print('car2:', car2.handle, car2.name, car2.speed)
+# print('car2:', car2.color)
+# print('Car: ', Car.color)
+
+print(id(car1), type(car1)) # 같은 Car type 설계도는 같으나 소유주가 다르다는 개념
+print(id(car2), type(car2))
+print(car1.__dict__)
+print(car2.__dict__) # 각 클래스의 멤버를 확인하는 방법
+
+print('method ---- ')
+print(car1.showData()) # Bound Method call car1의 주소를 타고 들어간다.
+print(car2.showData()) 
+
+
+
+

@@ -1,0 +1,29 @@
+
+class CoinIn: # 연산을 담당하는 클래스
+    # 넣은 동전에 대한 연산을 진행하자
+    def calc(self,coin,cupCount): # 연산을 진행하기 위헤서 필요한것 동전과 잔수 커피의 가격은 200원 
+        
+        # 잔돈 구하기
+        if 200 * cupCount - coin < 0: 
+            return '요금이 부족합니다.'
+        else: # 아니라면 계산 진행하기
+            change = 200 * cupCount - coin
+            return '커피는 {}잔' + "잔돈 {}원".format(cupCount,change)
+
+class Machine: # 동전의 값을 입력받고 연산 클래스를 포함해야한다. 
+    def __init__(self):
+       self.coin = CoinIn() 
+       # 포함을 진행한다.
+       # 생성자에서 포함을 진행하는 것이 메모리 절약에 좋다.
+        
+    def showData(self):
+        coin = int(input('동전을 넣어주세요'))
+        cupCount = int(input('몇 잔을 뽑을거에요?'))
+        print(self.coin.calc(coin, cupCount))
+        
+        
+if __name__ == '__main__':
+    Machine().showData()
+       
+    
+        

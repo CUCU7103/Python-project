@@ -1,0 +1,24 @@
+# 냉장고 클래스에 음식 클래스 담기
+
+class Frige:
+    isOppend = False 
+    foods = []
+    
+    def open(self):
+        self.isOppend = True
+        print('냉장고 문 열기')
+        
+    def put(self,thing):
+        if self.isOppend:
+            self.foods.append(thing) # 클래스의 포함
+            print('냉장고에 음식을 저장')
+            self.list()
+        else:
+            print('냉장고 문이 닫혀서 음식을 담을 수 없음.')     
+            
+    def close(self):
+        self.isOppend = False   
+        print('냉장고 문 닫기')
+    def list(self): # 냉장고에 담긴 음식물 확인
+        for f in self.foods:
+            print('-', f.irum, f.expiry_date)

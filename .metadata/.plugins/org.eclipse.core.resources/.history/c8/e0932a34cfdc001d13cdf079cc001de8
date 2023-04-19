@@ -1,0 +1,7 @@
+# Thread를 이용해 동적으로 시간을 출력한다
+import time
+
+now = time.localtime()
+print('현재는 {}일 {}시 {}분 {}초'.format(now.tm_mday,now.tm_hour,\
+                                   now.tm_min,now.tm_sec))
+

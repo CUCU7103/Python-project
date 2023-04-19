@@ -1,0 +1,21 @@
+import cgi
+
+form = cgi.FieldStorage()
+
+name = form["name"].value
+phone = form["phone"].value
+gender = form["gen"].value
+
+print('''
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>친구 정보</h2>
+이름은 {0}, 주소는{1}, 성별은 {2}
+</body>
+</html>
+'''.format(name,phone,gender))

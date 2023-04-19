@@ -1,0 +1,9 @@
+class Machine:
+    def showData(self):
+        coin = input('동전을 넣으세요')
+        coin =int(coin)
+        cupCount =input('잔 수 선택')
+        cupCount =input(cupCount)
+    
+    
+Machine().showData()

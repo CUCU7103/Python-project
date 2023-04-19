@@ -1,0 +1,41 @@
+from django.shortcuts import render
+from django.http.response import HttpResponseRedirect
+
+
+# Create your views here.
+def mainFunc(request): 
+    return render(request,'main.html') # forward 방식: 서버가 직접 template로 이동하여 해당 파일을 푸쉬함.
+
+
+
+def setOsFunc(request):
+    # print('request.GET : ' , request.GET) # <QueryDict: {}>
+    if "favorite_os" in request.GET:
+        print(request.GET["favorite_os"])
+        request.session["f_os"]=request.GET["favorite_os"] # 세션을 생성함. 값으로 favorit_os를 들고다닌다.
+        return HttpResponseRedirect("/showos")# redirect 방식이다. 클라이언트 브라우저를 통해서 요청한다. 
+                                              # 그래야 main.urls.py를 만날 수 있다. 
+                                              # urls.py 는 클라이언트 브라우저만을 통해서 접근이 가능하다.
+    
+    else:
+      return render(request,'selectos.html')  
+
+def showOsFunc(request):
+    print('showOsFunc에 무사히 도착')
+    
+    dict_context ={} # html 파일에 전달할 변수
+    
+    if "f_os" in request.session: # 세션 키가 존재한다면
+        print("유효시간은 : " , request.session.get_expiry_age())
+        dict_context['sel_os'] = request.session["f_os"]
+        dict_context['message'] = "선택한 운영체제는  %s"%request.session["f_os"]
+    
+    else:
+        dict_context['sel_os'] = None
+        dict_context['message'] = "운영체제를 선택하지 않았네요"
+        
+    # del request.session["f_os"] # 세션 삭제 (특정 키만)   
+    request.session.set_expiry(5) # 세션의 기본 값은 30분이나 5초로 유효시간을 변경하였다.
+    
+    return render(request,"show.html",dict_context)
+        

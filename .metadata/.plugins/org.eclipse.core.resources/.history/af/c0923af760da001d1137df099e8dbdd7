@@ -1,0 +1,18 @@
+# Abstract class
+from abc import abstractmethod, ABCMeta
+
+class AbstractClass(metaclass=ABCMeta): # 추상클래스로 설정함.  metaclass=ABCMeta
+    @abstractmethod  
+    def absMethod(self): # @abstractmethod로 장식된 추상메소드 
+        pass # 추상메소드에는 내용이 없어야 함.
+
+    def normalMethod(self):
+        print("추상클래스 내의 일반메소드") # 자식이 부를 예정이다.
+    
+# kbs = AbstractClass() # 추상 클래스는 인스턴스 할 수 없다.
+# TypeError: Can't instantiate abstract class AbstractClass with abstract method abcMethod
+
+class Child1(AbstractClass):
+        name = '난 Child1'
+
+c1 = Child1()

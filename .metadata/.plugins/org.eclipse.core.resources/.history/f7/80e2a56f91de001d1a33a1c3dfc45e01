@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+{% if articles.count > 0 %}
+	<table>
+	{% for a in articles %}
+	<tr><td>{{a.id}}</td><td>{{a.irum}}</td><td>{{a.juso}}</td><td>{{a.nai}}</td>
+	{% endfor %}
+	</table>
+{% else %}
+	자료가 없어요
+{% endif %}
+<input type ="button" value="홈으로" onclick="location.href='/'">
+</body>
+</html>

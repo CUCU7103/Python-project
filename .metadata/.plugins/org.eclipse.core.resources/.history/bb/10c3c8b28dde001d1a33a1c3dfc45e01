@@ -1,0 +1,12 @@
+from django.db import models
+
+# Create your models here.
+class Article(models.Model):
+    # models에 db를 로컬db 생성함.
+    # 총 4개의 컬럼을 생성하였다.
+    # 모델에 table 논리적 작업 후 migration에서 물리적인 테이블 생성작업이 진행된다.
+    # 내용이 변경되어지면 migration 삭제 후 다시 만드는 것이 깔끔하다.
+    id = models.CharField(max_length=10) # code는 varchar 10자리가 됨 가변형
+    irum = models.CharField(max_length=20)
+    juso = models.IntegerField() 
+    nai = models.IntegerField()  # 날짜와 시간

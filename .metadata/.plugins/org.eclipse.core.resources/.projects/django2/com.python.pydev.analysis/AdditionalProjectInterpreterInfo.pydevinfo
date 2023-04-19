@@ -1,0 +1,71 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\work\psou\.metadata\.plugins\org.eclipse.core.resources\.projects\django2\com.python.pydev.analysis\v2_indexcache
+gpapp.__init__|1681864816860047700|C:\work\psou\django2\gpapp\__init__.py
+django2.wsgi|1681864676087038800|C:\work\psou\django2\django2\wsgi.py
+gpapp.tests|1681864816855046700|C:\work\psou\django2\gpapp\tests.py
+django2.urls|1681871523943497900|C:\work\psou\django2\django2\urls.py
+django2.asgi|1681864676076157600|C:\work\psou\django2\django2\asgi.py
+gpapp.admin|1681864816839042300|C:\work\psou\django2\gpapp\admin.py
+django2.settings|1681871213199464900|C:\work\psou\django2\django2\settings.py
+manage|1681864676097038200|C:\work\psou\django2\manage.py
+gpapp.apps|1681864817556514900|C:\work\psou\django2\gpapp\apps.py
+gpapp.views|1681870725199797500|C:\work\psou\django2\gpapp\views.py
+django2.__init__|1681864675356918300|C:\work\psou\django2\django2\__init__.py
+gpapp.migrations.__init__|1681864816861047300|C:\work\psou\django2\gpapp\migrations\__init__.py
+gpapp.models|1681864816850047600|C:\work\psou\django2\gpapp\models.py
+gpapp.urls|1681871041101436900|C:\work\psou\django2\gpapp\urls.py
+-- END DISKCACHE
+-- START DICTIONARY
+18
+11=C:\work\psou\django2\manage.py
+6=django2.wsgi
+17=GpappConfig
+14=django2.urls
+4=django2.asgi
+2=django2.settings
+7=C:\work\psou\django2\gpapp\views.py
+12=manage
+1=C:\work\psou\django2\django2\settings.py
+18=CallView
+10=gpapp.apps
+8=gpapp.views
+5=C:\work\psou\django2\django2\wsgi.py
+13=C:\work\psou\django2\django2\urls.py
+9=C:\work\psou\django2\gpapp\apps.py
+16=gpapp.urls
+3=C:\work\psou\django2\django2\asgi.py
+15=C:\work\psou\django2\gpapp\urls.py
+-- END DICTIONARY
+-- START TREE 1
+23
+all|1|ALLOWED_HOSTS!1^28#1*19@
+app|2|application!3^16#1*35@application!5^16#1*51@
+aut|1|AUTH_PASSWORD_VALIDATORS!1^103#1*19@
+bas|1|BASE_DIR!1^16#1*19@
+cal|1|CallView!7^10#7*65@
+dat|1|DATABASES!1^84#1*19@
+deb|1|DEBUG!1^26#1*19@
+def|1|DEFAULT_AUTO_FIELD!1^126#1*19@
+gpa|1|GpappConfig!9^4#7*81@
+ins|2|insertFunc!7^13#5*66@INSTALLED_APPS!1^42#1*19@
+lan|1|LANGUAGE_CODE!1^109#1*19@
+mai|2|MainFunc!7^6#5*66@main!11^7#5*98@
+mid|1|MIDDLEWARE!1^52#1*19@
+roo|1|ROOT_URLCONF!1^54#1*19@
+sec|1|SECRET_KEY!1^23#1*19@
+sel|1|selectFunc!7^29#5*66@
+sta|1|STATIC_URL!1^121#1*19@
+tem|1|TEMPLATES!1^71#1*19@
+tim|1|TIME_ZONE!1^111#1*19@
+upf|1|upFunc!7^32#5*66@
+url|2|urlpatterns!13^36#1*115@urlpatterns!15^13#1*131@
+use|2|USE_TZ!1^115#1*19@USE_I18N!1^113#1*19@
+wsg|1|WSGI_APPLICATION!1^73#1*19@
+-- END TREE
+-- START TREE 2
+3
+def|1|default_auto_field!17&9^5#5*83@
+nam|1|name!17&9^6#5*83@
+tem|1|template_name!18&7^11#5*67@
+-- END TREE

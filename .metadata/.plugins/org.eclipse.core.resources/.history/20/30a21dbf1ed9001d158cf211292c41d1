@@ -1,0 +1,64 @@
+# 함수 장식자 : @  <-- meta 기능이 있다.
+# 장식자는 또 다른 함수를 감싼 함수
+
+def make2(fn): # 인수를 함수로 받는다.
+    return lambda : "안녕 " + fn() # 
+
+def make1(fn):
+    return lambda : '반가워 ' + fn() # 
+ 
+def hello():
+    return '홍길동' 
+
+hi = make2(make1(hello))
+# -> make1에 '홍길동' 값이 들어가고. make1은 return 값으로 반가워 홍길동을 반환한다. 
+# make2는 안녕 반가워 홍길동을 반환하고 이 값은 hi에 들어간다.
+print(hi()) # 안녕 반가워 홍길동
+
+@make2 # => make2 + make1 + hello2 make2 이 make1을 감싼다.
+@make1 # => make1 + hello2 , make1이 hello2를 감싸고
+def hello2():
+    return '고길동' 
+print(hello2()) # == hi = make2(make1(hello2))
+
+print('-----')
+
+def trace(func):
+    def wrapper(a,b):
+        r = func(a,b)
+        print('함수명 : {0} (a={1}, b={2})->{3}'.format(func.__name__, a,b,r)) # 함수명을 출력할때 사용한다.
+        return r 
+    return wrapper # Closure 내부함수를 반환함.
+
+@trace
+def add(a,b):
+    return a + b 
+
+print(add(10,20)) # 함수명 add(a=10, b=20)->30
+                  # 30
+
+print('\n재귀함수(recursive funciton) : 함수가 자신을 호출') # for while 과 같이 반복작업이 가능하다.
+def countDown(n):
+    if n == 0:
+        print('함수 수행 완료 ')
+    else:
+        print(n, end =' ')
+        countDown(n - 1) # 재귀
+        
+countDown(5) # 5 4 3 2 1 함수 수행 완료
+
+print('factorial 구현하기')
+def factFunc(a):
+    if a == 1 : return 1
+    print(a)
+    return a * factFunc(a-1) # 5 * 4 * 3 * 2 * 1
+
+result =  factFunc(5)
+print(result)
+
+print('프로그램 종료')
+
+
+
+
+

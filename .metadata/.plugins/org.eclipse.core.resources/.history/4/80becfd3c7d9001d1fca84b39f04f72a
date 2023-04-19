@@ -1,0 +1,17 @@
+# 클래스의 상속
+class Person: 
+    say = '난 사람이야 ~'
+    nai = '20' 
+    def __init__(self,nai):
+        print('Person 생성자')
+        self.nai = nai
+        
+    def printInfo(self):
+        print("나이 :{}, 이야기:{},".format(self.nai, self.say))
+        
+    def hello(self):
+        print('안녕')
+        
+person = Person('22')
+person.printInfo()
+person.hello()

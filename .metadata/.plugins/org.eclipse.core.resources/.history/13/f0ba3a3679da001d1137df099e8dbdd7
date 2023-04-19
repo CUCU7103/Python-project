@@ -1,0 +1,11 @@
+# 파일 입출력 
+
+import os
+from sqlalchemy.sql.coercions import expect
+
+print(os.getcwd()) # C:\work\psou\pypro1\pack2_mid 현재 경로를 알려준다.
+
+try:
+    
+expect Exception as e: 
+    print('파일처리 오류',e)

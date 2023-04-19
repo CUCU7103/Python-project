@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="ss?name=성공">자료 출력</a>
+<a href="ff?move=이동">이동</a>
+</body>
+</html>

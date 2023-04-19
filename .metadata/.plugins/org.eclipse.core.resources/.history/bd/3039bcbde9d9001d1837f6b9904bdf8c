@@ -1,0 +1,42 @@
+# 출력문구
+# 동전을 입력하세요 
+# 커피 몇잔을 원하시나요?
+
+
+
+class Machine:
+    def showData(self):
+        coin = int(input('동전을 입력하세요'))
+        cupCount  = int(input('커피 몇 잔을 원하시나요??'))
+        money = CoinIn(coin, cupCount) # 포함 사용함.
+        
+        
+class CoinIn:
+    def __init__(self,coin,cupCount):
+        self.coin = coin
+        self.cupCount = cupCount
+        
+    def culc(self , cupCount):
+        if 200 * cupCount > self.coin:
+            return '요금이 부족합니다.'
+        else: 
+             change = self.coin - (200  * cupCount)
+             return '커피' + str(cupCount) + '잔과 잔돈' + str(change)      
+       
+        
+
+if __name__ == "__main__":
+    
+    Machine().showData()
+ 
+
+
+
+
+
+
+
+
+
+# class Machine:
+#     def showData

@@ -1,0 +1,33 @@
+# DB 연동 프로그래밍 - 개인용 DB(sqlite3) 사용하기
+
+import sqlite3
+print(sqlite3.sqlite_version)
+
+print('---------------------------')
+
+conn = sqlite3.connect('mid5_ex.db') # 개인용 db를 생성함.
+
+try:
+    
+    cursor  = conn.cursor() # sql 문 실행 객체
+    
+    # create table 
+    cursor.execute('create table if not exists friend(name text, phone text)')
+    cursor.execute('insert into friend(name, phone) values("홍길동","111-111")')
+    cursor.execute("insert into friend(name, phone) values(?,?)",('신길동','222-2222' ))
+    inputdata = ("고길동", "333=2222")
+    cursor.execute("insert into friend(name, phone) values(?,?)",inputdata)
+    conn.commit()
+    
+    # select
+    cursor.execute("select * from friend")
+    print(cursor.fetchone())
+    
+except Exception as e:
+    print('err: ' ,e)
+    conn.rollback()
+finally:
+    cursor.close()
+    conn.close()
+    
+    

@@ -1,0 +1,107 @@
+from pack1basic.test1 import aa
+from cryptography.x509 import name
+
+
+# 묶음 자료형 : list - 순서가 o , 변경이 가능하다, 요소값의 종류는 다양하다.
+# 속도가 느리다 - 데이터 분석의 경우 numpy의 ndarray를 사용해야 함.
+
+a = [1,2,3] 
+b = [10, a, 20.1,True, 'kbs']
+
+print(a, type(a), id(a))
+print(b, type(b), id(b))
+print(b[0]) # scalar
+print(b[1]) # [1, 2, 3]
+
+
+print()
+family = ['엄마', '아빠', '나']
+family.append('남동생') # list에 추가
+family.insert(0, '할아버지' ) # insert는 삽입
+family.extend(['여동생', '삼촌']) # 여러개 추가
+family += ['고모','이모'] # 위와 동일함.
+family.remove('남동생') # 제거함.
+print(len(family), family)
+print(family.index('엄마')) # 해당 값의 인덱스를 확인한다.
+print('엄마' in family) # 존재여부 확인 boolean
+
+print()
+aa = [1,2,3,['a','b','c'],4,5]
+print(aa[0]) # 인덱싱
+print(aa[0:3]) # 슬라이싱 (0 이상 3미만)
+print(aa[3]) 
+print(aa[3][:2])  # ['a', 'b']
+print(aa[::2]) # 증가치
+
+
+print()
+print(aa, id(aa))
+aa[0] =7 # 요소값 변경이 가능하다.
+print(aa,id(aa))
+
+aa.remove(4) # 값에 의한 삭제
+del aa[4] # 순서에 의한 삭제 
+print(aa)
+
+aa[3].remove('c')
+del aa[3][0]
+print(aa)
+
+del aa # 전체 삭제
+ # print(aa)
+
+# sort 
+aa = [3,1,5,2,4]
+aa.sort()
+aa.sort(reverse=True) # [5, 4, 3, 2, 1]
+print(aa)
+
+aa2 = [3,1,5,2,4]
+aa3 = sorted(aa2) # 원본이 정렬되지 않는다.
+print(aa2) # [3, 1, 5, 2, 4]
+print(aa3) # [1, 2, 3, 4, 5]
+
+print('복사')
+names = ['톰','제임스','오스카']
+names2 = names # 주소치환 - 얕은 복사
+print(names, id(names)) # ['톰', '제임스', '오스카'] 2132646860672
+print(names2, id(names2)) # ['톰', '제임스', '오스카'] 2132646860672
+names[0] = '길동'
+print(names) # ['길동', '제임스', '오스카']
+print(names2) # ['길동', '제임스', '오스카']
+
+print('깊은 복사')
+import copy
+names3 = copy.deepcopy(names) # 새로운 객체를 생성함.
+print(names, id(names)) # ['길동', '제임스', '오스카'] 2132646860672
+print(names3, id(names3)) #  ['길동', '제임스', '오스카'] 2828391979520 주소가 다름.
+names3[0] = '순신'
+print(names) # ['길동', '제임스', '오스카'] 서로 다른 객체이기에 변하지 않는다.
+print(names3) #  ['순신', '제임스', '오스카'] 
+
+# 자료구조 : stack(LiFO), queue(Fifo)
+sbs = [1,2,3]
+sbs.append(4)
+print(sbs.pop()) # 4 빠져나감
+print(sbs.pop()) # 3 빠져나감
+print(sbs) # [1, 2]
+
+print()
+sbs2 = [1,2,3]
+sbs2.append(4)
+print(sbs2.pop())
+print(sbs2.pop())
+print(sbs2)
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+# class 
+# 파이썬에선는 전부 public이다..
+
+class Car: 
+    handle  = 0 # 맴버변수
+    speed = 0
+    
+    def __init__ (self, name, speed): 
+        self.name = name  # 자바와의 다른점이다.
+        self.speed = speed
+    
+    def showData(self):
+        km = '킬로미터'  # 지역변수
+        msg = '속도' + str(self.speed) + km # self는 this라고 생각,
+                                            #  맴버변수를 사용할때는 self가 선행되어야한다.
+        return  msg  
+print(id(Car), type(Car))   
+print(Car.handle) # 원형(prototype) 클래스의 맴버 호출함.
+        

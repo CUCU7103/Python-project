@@ -1,0 +1,9 @@
+# 원격 DB 서버와 연동을 진행하자.
+# >pip install mysqlclient  모듈 다운로드 후 설치함.
+# C:\Users\syste\AppData\Roaming\Python\Python310\site-packages 해당경로로 다운로드 받은 제3모듈이 저장되어진다.
+
+import MySQLdb
+ 
+conn = MySQLdb.connect(host = '127.0.0.1', user = 'root', password='time@less6805', database='test' ,port='3306')
+
+print(conn)

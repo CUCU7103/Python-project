@@ -1,0 +1,10 @@
+from django.shortcuts import render
+
+def showFunc(request):
+    return render(request,"main.html")
+
+def selectFunc(request):
+    
+    return render(request,"select.html",{'결과':'성공'})
+
+# Create your views here.

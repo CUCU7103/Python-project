@@ -1,0 +1,11 @@
+from django.db import models
+
+# Create your models here.
+class Article(models.Model):
+    # models에 db를 로컬db 생성함.
+    # 총 4개의 컬럼을 생성하였다.
+    # 모델에 table 논리적작업 후 migration에서 물리적인 테이블 생성작업이 진행된다.
+    code = models.CharField(max_length=10) # code는 varchar 10자리가 됨 가변형
+    name = models.CharField(max_length=20)
+    price = models.IntegerField() 
+    pub_date = models.DateTimeField() # 날짜와 시간

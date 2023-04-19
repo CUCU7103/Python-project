@@ -1,0 +1,19 @@
+# client / server 간 통신 연습(1회용)
+
+# echo server : 클라이언트 요청에 반응하는 서버 
+from socket import * 
+
+# tcp 기반의 socket 객체 생성
+serversock = socket(AF_INET, SOCK_STREAM) # socket(소캣의 종류, 소캣유형)
+serversock.bind(('127.0.0.1',8888)) # bind는 tuple type으로 값을 주어야 한다.
+serversock.listen(1) # 1~5까지 부여가능 동시에 붙는 (클라이언트가) 숫자    
+                     # Tcp Listener 지정함.
+print('server start....')
+
+conn,addr = serversock.accept() # 연결 대기 (클라이언트의 접속때까지)
+                                # 클라이언트의 소캣과 클라이언트의 주소를 받는다
+
+print('client addr : ' , addr)
+print('from client message : ', conn.recv(1024).decode())
+conn.close()
+serversock.close()

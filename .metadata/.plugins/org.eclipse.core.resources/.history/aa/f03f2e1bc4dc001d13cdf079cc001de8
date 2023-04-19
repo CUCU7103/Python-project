@@ -1,0 +1,7 @@
+# client side : socket 객체를 생성한다.
+from socket import *
+
+clientsock = socket(AF_INET, SOCK_STREAM) # 소캣 모듈에 들어있는 정보들....
+
+clientsock.connect(('127.0.0.1',8888))  # 능동적으로 서버에 접속함.
+clientsock.send('안녕 반가워'.encode(encoding = 'UTF-8'),errors='strict')

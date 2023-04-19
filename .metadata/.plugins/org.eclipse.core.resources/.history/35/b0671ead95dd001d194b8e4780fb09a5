@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>파이썬으로 웹 서버 구축</h2>
+<a href='https://www.daum.net'>다음 사이트</a>
+<a href="def.html">def 문서</a>
+</body>
+</html>

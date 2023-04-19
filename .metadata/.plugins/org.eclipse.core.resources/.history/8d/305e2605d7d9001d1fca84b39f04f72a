@@ -1,0 +1,17 @@
+# 다중 상속
+class Tiger: 
+    data = "호랑이 세계"
+    
+    def Cry(self):
+        print('호랑이 : 어흥')
+    
+    def Eat(self):
+        print('맹수는 생고기를 좋아함.')
+        
+class Lion:
+    
+    def Cry(self):
+        print('사자 : 으르렁')
+    
+    def Hobby(self):
+        

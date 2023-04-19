@@ -1,0 +1,6 @@
+# OpenCv : 다양한 영상/동영상 처리에 사용할 수 있는 오픈소스 라이브러리.
+
+import cv2
+
+img1 = cv2.imread('./abc.jpg') 
+cv2.imshow()

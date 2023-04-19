@@ -1,0 +1,8 @@
+# 동 또는 리 이름으로 우편번호 자료 읽기
+
+try: 
+    dong = input('동 이름 입력') 
+    print(dong)
+    
+except Exception as e:
+    print("err: " , e)

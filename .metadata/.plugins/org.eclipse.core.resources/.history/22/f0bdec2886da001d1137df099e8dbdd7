@@ -1,0 +1,32 @@
+# 파일 입출력 
+
+import os
+from sqlalchemy.sql.coercions import expect
+
+print(os.getcwd()) # C:\work\psou\pypro1\pack2_mid 현재 경로를 알려준다.
+
+try:
+    print('텍스트 파일 읽기') 
+    # mode = 'r'읽기 ,'w'쓰기,'a' 추가하기 , 'b' 바이너리 처리함.
+    # f1 = open(r'C:\work\psou\pypro1\pack2_mid\mid2sample.txt', mode='r' , encoding= 'utf-8') # 열고 작업하고
+    # 파일처리 오류 'cp949' codec can't decode byte 0xec in position 0: illegal multibyte sequence  => 한글 깨짐이다
+    f1 = open(os.getcwd() + r'\mid2sample.txt', mode='r' , encoding= 'utf-8')
+    print(f1)
+    print(f1.read())
+    f1.close() # 항상 작업이 끝나면 닫아준다.
+    
+    print('택스트 파일 저장')
+    f2 = open('mid2sample2.txt', mode = 'w', encoding ='utf-8')
+    f2.write('때가 되었군 ')
+    f2.write('광합성 후 만나기로\n')
+    f2.close()
+    print('저장완료')
+    
+except Exception as e: 
+    print('파일처리 오류',e)
+    
+    
+    
+    
+    
+    

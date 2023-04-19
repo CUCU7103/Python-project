@@ -1,0 +1,43 @@
+from abc import abstractmethod, ABCMeta
+
+
+class Employee(metaclass=ABCMeta):
+        irum = '이름'
+        nai = '나이'
+        
+        @abstractmethod
+        def pay(self):
+            pass
+        
+        @abstractmethod
+        def data_point(self):
+            pass
+        
+ 
+ 
+class Tempopary(Employee):
+        
+        ilsu = 20
+        ildang = 150000
+        
+        def __ini__(self,irum,nai,pay):
+            self.irum = irum
+            self.nai = nai
+        
+        def pay(self):
+            pay = self.ilsu * self.ildang
+            print(pay)
+        
+        
+        
+class Regular(Employee):
+        salary = 350000
+        
+        
+t = Tempopary('홍길동',25,15000)
+  
+    
+    
+    
+    
+           

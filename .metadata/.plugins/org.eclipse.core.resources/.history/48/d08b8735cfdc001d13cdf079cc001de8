@@ -1,0 +1,17 @@
+# Thread를 이용해 동적으로 시간을 출력한다
+import time
+import threading
+
+now = time.localtime()
+print('현재는 {}일 {}시 {}분 {}초'.format(now.tm_mday,now.tm_hour,\
+                                   now.tm_min,now.tm_sec))
+
+def show_data():
+    now = time.localtime()
+    print('현재는 {}년 {}월 {}일'.format(now.tm_year,now.tm_mon,now.tm_mday))
+    print('현재는 {}시 {}분 {}초'.format(now.tm_hour,now.tm_min,now.tm_sec))
+
+th = threading.Thread(target=show_data)
+th.start()
+ㄴth.join()
+print('프로그램 종료')

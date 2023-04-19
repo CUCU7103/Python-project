@@ -1,0 +1,34 @@
+# class : 객체지향적(중심적인)인 프로그래밍 구사
+# 클래스는 새로운 이름공간을 지원하는 단위이다. 멤버변수와 메소드를 갖는다.
+# 접근지정자 X , 메소드 오버로딩 X 
+
+print('뭔가를 하다가....')
+
+class TestClass: # class header 
+    # 이하는 class body가 된다.
+    aa = 1 # 멤버변수는 클래스 내에서 전역이다. 
+    
+    def __init__(self): # 생성자이다. 내용이 없다면 생략이 가능하다.
+        print('생성자')
+        # 생성자 --> 작업수행 -->소멸자 
+    def  __del__(self): # 생략이 가능하다.
+        print('소멸자')
+        
+    def printMsg(self): # 멤버 메소드이다. ㄴ>self의 유무에 따라 메소드와 함수로 나뉜다.
+        name = '한국인'
+        print(name)
+        print(self.aa)
+
+print(TestClass.aa) # 클래스도 객체로 생성되어진다. 메모리를 확보한다 , 단 자주 쓰이는 방법은 아니다.
+
+test = TestClass() # 생성자 호출. 인스턴스가 만들어진다.
+print(test.aa) # 1
+print( id(TestClass),' ',id(test)
+
+print()
+# TestClass.printMsg() # err 인수와 매개변수를 맞추지 않음
+test.printMsg()
+
+
+
+

@@ -1,0 +1,15 @@
+MODULES_MANAGER_V3
+dbapp.__init__|C:\work\psou\django5localdb\dbapp\__init__.py
+dbapp.admin|C:\work\psou\django5localdb\dbapp\admin.py
+dbapp.apps|C:\work\psou\django5localdb\dbapp\apps.py
+dbapp.migrations.0001_initial|C:\work\psou\django5localdb\dbapp\migrations\0001_initial.py
+dbapp.migrations.__init__|C:\work\psou\django5localdb\dbapp\migrations\__init__.py
+dbapp.models|C:\work\psou\django5localdb\dbapp\models.py
+dbapp.tests|C:\work\psou\django5localdb\dbapp\tests.py
+dbapp.views|C:\work\psou\django5localdb\dbapp\views.py
+django5localdb.__init__|C:\work\psou\django5localdb\django5localdb\__init__.py
+django5localdb.asgi|C:\work\psou\django5localdb\django5localdb\asgi.py
+django5localdb.settings|C:\work\psou\django5localdb\django5localdb\settings.py
+django5localdb.urls|C:\work\psou\django5localdb\django5localdb\urls.py
+django5localdb.wsgi|C:\work\psou\django5localdb\django5localdb\wsgi.py
+manage|C:\work\psou\django5localdb\manage.py

@@ -1,0 +1,26 @@
+mdays = int(input())
+# if mdays % 4 == 0 && mdays % 100 !=0 || mdays % 400 == 0:
+#         print('{}년은 윤년 ".format(mdays,))
+# else :
+#         print('{}년은 평년 ".format(mdays,))
+#
+
+# if mdays % 4 == 0 and mdays % 100 !=0 or mdays % 400 == 0:
+#         print('{}년은 윤년 '.format(mdays))
+# else :
+#         print('{}년은 평년 '.format(mdays))
+
+
+
+# 아래 코드가 동작하도록 자전거 클래스(Bicycle class)를 정의하시오.
+# 조건1 : 멤버 변수는 name, wheel, price 이다.
+# 조건2 : 바퀴 가격은 바퀴수 * 가격이다. (배점:10)
+# gildong = Bicycle('길동', 2, 50000)      # name, wheel, price
+# gildong.display()
+
+
+class Bicycle:
+    name =''
+    wheel; price = 0
+    def __init__(self,name, wheel, price):
+    pass
